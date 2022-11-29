@@ -1,14 +1,20 @@
 
 {
-  "name": "Heroku Connect Rails Demo",
+  "name": "Heroku Connect Sync Demo",
   "description": "A super basic rails CRUD app to showcase Heroku Connect.",
-  "website": "https://github.com/tsykoduk/HCRailsDemo",
-  "repository": "https://github.com/tsykoduk/HCRailsDemo",
+  "website": "https://github.com/benjaminrust/HerokuConnectSyncDemo",
+  "repository": "https://github.com/benjaminrust/HerokuConnectSyncDemo",
   "logo": "http://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg",
   "scripts": {},
   "env": {
     "RAILS_ENV": "production"
   },
-  "addons": ["heroku-postgresql", "heroku-redis:hobby-dev"]
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
+  "addons": ["heroku-postgresql:standard-0", "heroku-redis:premium-0"]
 
 }
