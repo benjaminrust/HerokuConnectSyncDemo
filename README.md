@@ -1,6 +1,6 @@
 HCRailsDemo
 ===========
-
+11/28 - updated app.json to reflect the need for the new paid resources
 7/29 - renamed master branch to main
 
 Just a rails CRUD app to demo Heroku connect. It is set up to sync the Account object down. It relies on a field called external_id__c as it's external ID for upserts. The rails app will do the "right thing" and automatically generate a guid for any records created there. It's left up to the gentle reader to extend their salesforce org to "do the right thing" and generate a guid on the account object.
@@ -17,8 +17,8 @@ Click on this button:
 Or, deploy the app by hand:
 
 ```
-git clone https://github.com/tsykoduk/HCRailsDemo
-cd HCRailsDemo
+git clone https://github.com/benjaminrust/HerokuConnectSyncDemo
+cd HerokuConnectSyncDemo
 heroku create
 heroku addons:create herokuconnect
 heroku addons:create papertrail
